@@ -23,7 +23,6 @@ local rf = Rs:WaitForChild("Function")
 local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
 local plr = Players.LocalPlayer
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ejp2002/edited/main/library.lua"))();
 
 local screen = Instance.new("ScreenGui", CoreGui)
 local function create_confirm(text)
@@ -404,7 +403,7 @@ local function getClosestMob()
     local distance, mob = math.huge;
     for i, v in next, workspace.Mobs:GetChildren() do
         if (v:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Nameplate") and v.PrimaryPart and v.Parent and v:FindFirstChild("Entity") and v.Entity.Health.Value > 0) then
-            if (library.flags.bosses) then
+            if (lib.flags.bosses) then
                 for a, b in next, bosses[game.PlaceId] do
                     if (b == v.Name) then
                         return v;
