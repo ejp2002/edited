@@ -23,7 +23,7 @@ local rf = Rs:WaitForChild("Function")
 local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
 local plr = Players.LocalPlayer
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoHacks/Utilities/main/UI.lua"))();
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ejp2002/edited/main/library.lua"))();
 
 local screen = Instance.new("ScreenGui", CoreGui)
 local function create_confirm(text)
