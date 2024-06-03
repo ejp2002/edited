@@ -1,17 +1,15 @@
-if getgenv().SB2Script then
-    return
-end
+--[[
+    Swordburst 2 GUI
 
-getgenv().SB2Script = true
+    By Spencer#0003
+    Sponsored by Wally
 
-local wait = task.wait
-while not game:IsLoaded()  do
-    wait(1)
-end
+    (If I get another retard DMing me about this fucking script, I'ma lose my shit)
+]]
 
-if game.GameId ~= 212154879 then
-    return
-end
+
+
+-- Init
 
 local getupvalue = getupvalue or debug.getupvalue;
 
