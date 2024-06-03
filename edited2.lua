@@ -1869,7 +1869,7 @@ local function getUpgrade(item)
 end
 
 do
-    
+    --[[
     formulas
 
     non legends: math.floor(base + (base * 0.04 * upgrade_count))
@@ -1882,7 +1882,7 @@ do
     local upgrade = 25
     local rate = string.format("%.2f", (damage - base) / (base * upgrade))
     print(rate)
-    
+    ]]
 
     local farm_tab2 = window:MakeTab("Farm Tab util")
 
