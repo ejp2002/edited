@@ -1516,7 +1516,7 @@ do
         farm_tab:AddSlider({
             Name = "Tween Speed",
             Min = 0,
-            Max = 100,
+            Max = 1000,
             Default = settings.Tween_Speed,
             Color = Color3.new(255, 255, 255),
             Increment = 1,
@@ -1869,7 +1869,7 @@ local function getUpgrade(item)
 end
 
 do
-    --[[
+    
     formulas
 
     non legends: math.floor(base + (base * 0.04 * upgrade_count))
@@ -1882,7 +1882,7 @@ do
     local upgrade = 25
     local rate = string.format("%.2f", (damage - base) / (base * upgrade))
     print(rate)
-    ]]
+    
 
     local farm_tab2 = window:MakeTab("Farm Tab util")
 
