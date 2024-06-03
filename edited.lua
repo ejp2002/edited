@@ -1,3 +1,18 @@
+if getgenv().SB2Script then
+    return
+end
+
+getgenv().SB2Script = true
+
+local wait = task.wait
+while not game:IsLoaded()  do
+    wait(1)
+end
+
+if game.GameId ~= 212154879 then
+    return
+end
+
 local getupvalue = getupvalue or debug.getupvalue;
 
 local httpService = game:GetService("HttpService");
