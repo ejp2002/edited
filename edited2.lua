@@ -796,7 +796,7 @@ end)
 local lib
 local editing = false
 if not editing then
-    lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/noobscripter38493/orion/main/orionnnn.lua"))()
+    lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ejp2002/edited/main/library2.lua"))()
 else
     lib = loadfile("orion.lua")()
 end
