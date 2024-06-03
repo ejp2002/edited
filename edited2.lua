@@ -1,3 +1,5 @@
+-- loadfile('SB2 Script/SCRIPT.lua')()
+-- loadstring(game:HttpGet('https://raw.githubusercontent.com/noobscripter38493/Swordburst-2/main/script.lua'))()
 if getgenv().SB2Script then
     return
 end
@@ -1448,12 +1450,12 @@ do
         })
 
         farm_tab:AddTextbox({
-            Name = "Tween Speed (0-10000)",
+            Name = "Tween Speed (0-1000)",
             Default = tostring(settings.Tween_Speed),
             TextDisappear = false,
             Callback = function(n)
                 n = tonumber(n)
-                if n and n >= 0 and n <= 10000 then
+                if n and n >= 0 and n <= 1000 then
                     settings.Tween_Speed = n
                 end
             end
