@@ -399,18 +399,6 @@ local bosses_on_floor = {
     }
 }
 
-local function getClosestMob()
-    local distance, mob = math.huge;
-    for i, v in next, workspace.Mobs:GetChildren() do
-        if (v:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Nameplate") and v.PrimaryPart and v.Parent and v:FindFirstChild("Entity") and v.Entity.Health.Value > 0) then
-            if (lib.flags.bosses) then
-                for a, b in next, bosses[game.PlaceId] do
-                    if (b == v.Name) then
-                        return v;
-                    end;
-                end;
-            end;
-
 local spawn = task.spawn
 spawn(function()
     local vim = game:GetService("VirtualInputManager")
